@@ -3,7 +3,6 @@
 * Colab üzerinde çalışma yapılabilmesi için öncelikle _Google Drive ile Colab'ı_ bağlantısı yapılmalıdır.
 * Bunun için aşağıdaki kodları alıp Colab ortamında çalıştırabilirsiniz.
 
-
 ```
 !apt-get install -y -qq software-properties-common python-software-properties module-init-tools
 !add-apt-repository -y ppa:alessandro-strada/ppa 2>&1 > /dev/null
@@ -20,4 +19,11 @@ vcode = getpass.getpass()
 ```
 
 * Kodu çalıştırınca karşınıza sırasıyla **2 adımlı kimlik doğrulama linkleri** gelecektir.
-* Bu linklerdeki şifreleri kopyalayıp yapıştırdıktan sonra Enter'lamak bağlantının kurulması için yeterlidir.
+* Bu linklerdeki şifreleri kopyalayıp yapıştırdıktan sonra Enter'lıyoruz.
+
+# **_"ls: cannot access 'drive': No such file or directory" Hatası İçin_**
+Bu kodlar çalıştırıldığında sorun giderilmiş olacaktır.
+```
+!mkdir -p drive
+!google-drive-ocamlfuse drive
+```
