@@ -21,8 +21,8 @@ vcode = getpass.getpass()
 * Kodu çalıştırınca karşınıza sırasıyla **2 adımlı kimlik doğrulama linkleri** gelecektir.
 * Bu linklerdeki şifreleri kopyalayıp yapıştırdıktan sonra Enter'lıyoruz.
 
-# **_"ls: cannot access 'drive': No such file or directory" Hatası İçin_**
-Bu kodlar çalıştırıldığında sorun giderilmiş olacaktır.
+# **_"ls: cannot access 'drive': No such file or directory" Hatası_**
+Kimlik doğrulamasından sonra bu kodlar çalıştırıldığında sorun giderilmiş olacaktır.
 ```
 !mkdir -p drive
 !google-drive-ocamlfuse drive
